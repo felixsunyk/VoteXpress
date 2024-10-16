@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.successful-vote {
+    display: flex;              
+    justify-content: center;    
+    align-items: center;       
+    height: 100vh;             
+    text-align: center;        
+    padding: 20px;             
+    box-sizing: border-box;     
+}
+.submition {
+    font-size: 2rem;          
+}
+
+
+
+
+
+

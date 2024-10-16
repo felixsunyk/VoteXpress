@@ -64,8 +64,9 @@ const Voting = () =>{
 
     const handleVote = () => {
 
-        const selectedCandidateName = person.find((user) => user.id === selectedCandidate)?.name;
-        navigate("/result", { state: { name: selectedCandidateName, position: "president" } });
+        const selectedCandidateName = person.find((user) => 
+        user.id === selectedCandidate)?.name;
+        navigate("/Thanks", { state: { name: selectedCandidateName, position: "president" } });
     };
 
 
@@ -90,9 +91,9 @@ const Voting = () =>{
             </div>
              
             ))}
-            <div className="vote-btn">
-                <button className="btn" disabled={!setSelectedCandidate} onClick={handleVote}>vote</button>
-            </div>
+
+                {selectedCandidate ? <div className="vote-btn"><button className="btn" onClick={handleVote}>vote</button></div> : null}
+           
         </div>
     );
 }; 
