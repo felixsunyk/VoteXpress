@@ -6,6 +6,7 @@ import Voting from './component/voter/Voting';
 import Result from './component/voter/Result';
 import Instruction from './component/voter/Instruction';
 import Home from './component/voter/Home';
+import Thanks from './component/voter/Thanks';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/Voting" element={<Voting />} />
           <Route path="/Advice" element={<Advice />} />
           <Route path="/Result" element={<Result />} />
+          <Route path="/Thanks" element={<Thanks />} />
           <Route path="/Instruction" element={<Instruction />} />
         </Routes>
       </Router>
