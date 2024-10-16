@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-box{
+    width: 50%; 
+    margin:  auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 3em;
+}
+.login-box p{
+    width: 300px; 
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+.exit-button{
+    font-size: x-large;
+    color: midnightblue;
+    background: none;
+    border: none;
+    
+}
+.close-btn{
+    text-align: right; 
+}
+.login-box form div {
+    margin-bottom: 15px;
+}
+.login-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-box input {
+    width: 100%;  
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #007bff; 
+}
+.signup-page{
+    font-size: small;
+}
+.to-signup{
+    background-color:midnightblue ;
+    padding: 1px 7px;
+    border-radius: 7px;
+    color: #f9f9f9;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn{
+    color: whitesmoke;
+    border: none;
+    text-decoration: none;
+}

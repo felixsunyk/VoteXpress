@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.instruction-btn{
+    display: flex;
+    justify-content: space-around;
+}
+.instruction-btn{
+    padding: 20px 0;
+}
+span{
+    font-weight: bold;
+}
+.button{
+    background-color: whitesmoke;
+}
+.instruction-card{
+    width: 50%; 
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+   margin-top: 3em;
+}
+.instrct-btn{
+    color: whitesmoke;
+    background-color: midnightblue;
+    text-decoration: none;
+}

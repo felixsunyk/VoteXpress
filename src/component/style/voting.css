@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.personal-div{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.personal-card{
+    background-color: white;
+    width: 50%;
+   margin: 0 auto;
+   padding:  10px;
+   margin-top: 3em;
+}
+.name-text{
+    margin-bottom: 1em;
+}
+.vote-btn{
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+ 
+    padding: 0.3em;
+
+}
+
+.personal-card h1{
+    text-align: center;
+   margin: 0 0  1em 0;
+
+}

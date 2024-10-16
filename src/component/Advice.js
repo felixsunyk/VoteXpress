@@ -1,6 +1,6 @@
 
 import {useEffect, useState } from "react";
-import './Advice.css';
+import './style/Advice.css';
 
 
 export default function  Advice() {

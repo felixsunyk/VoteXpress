@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* margin: 0.5em; */
+    background-color: whitesmoke;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:  0 2em;
+    background-color: midnightblue;
+    color: whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.list-cont{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;align-items: center;
+
+}
+.list-cont li{
+    margin: 0 10px;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: none;
+}
+.landing-text{
+    background-color: rgb(214, 214, 214);
+    margin:0.5em;
+    padding: 0 20px;
+    width: 50%;
+    text-align: center;
+    align-content: center;
+    height: 100%;
+    line-height: 30px;
+}
+.landing-text span{
+   font-size: larger;
+   font-weight: bold;
+   color: midnightblue;
+   /* padding-bottom: 10px; */
+   line-height: 6em;
+}
+.vote{
+    width: 100%;
+    height: 100%;
+    
+}
+.home{
+    height: 80vh;
+    display: flex;
+    width: 100%;
+    margin: 5em 0;
+}
+#vx-box{
+    background-color: white;
+    color: black;
+}
+.vx-list{
+    /* background-color: rgb(214, 214, 214); */
+    margin: 10px 0;
+    /* color: whitesmoke; */
+    text-align: center;
+    padding: 0.3em ;
+    background-color: rgb(235, 236, 236);
+    text-align: left;
+}
+.vx-list-ul{
+    list-style-type: none;
+    text-align: center;
+    line-height: 2.5em;
+}
+.vx-list-ul li span{
+    font-weight: bold;
+}
+ul a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.vx-meaning {
+    text-align: center;
+    padding-top: 2em;
+    text-transform: capitalize;
+    
+}
+.vx-list{
+    padding: 2em;
+    line-height: 2em;
+}
+.loop{
+    position: fixed;
+    top: 95%;
+    padding-bottom: 3em;
+    color: white;
+    background-color: midnightblue;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+.landing-text{
+    width: 100%;
+}
+}
