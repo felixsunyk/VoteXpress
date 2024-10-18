@@ -16,6 +16,7 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
+    margin-bottom: 3em;
     
 }
 .logo{
@@ -58,20 +59,35 @@ nav{
     
 }
 .home{
-    height: 80vh;
     display: flex;
-    width: 100%;
-    margin: 5em 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4em 0;
+    /* align-items: center; */
 }
+.profile-home-page{
+    flex: 1 ;
+    min-width: 200px;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 5em;
+    border-radius: 8px;
+    flex-basis: 45%;
+    -webkit-box-shadow: 4px 7px 16px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 7px 16px -2px rgba(0,0,0,0.75);
+     box-shadow: 4px 7px 16px -2px rgba(0,0,0,0.75);
+}
+
 #vx-box{
     background-color: white;
     color: black;
+    border-radius: 10px;
 }
 .vx-list{
-    /* background-color: rgb(214, 214, 214); */
-    margin: 10px 0;
-    /* color: whitesmoke; */
+    margin: 3em;
     text-align: center;
+    border-radius: 17px;
     padding: 0.3em ;
     background-color: rgb(235, 236, 236);
     text-align: left;
@@ -90,9 +106,12 @@ ul a{
     text-transform: capitalize;
 }
 .vx-meaning {
-    text-align: center;
     padding-top: 2em;
-    text-transform: capitalize;
+    font-weight: bold;
+    text-transform: uppercase;
+   text-align: center;
+   display: flex;
+   flex-wrap: wrap;
     
 }
 .vx-list{
@@ -109,8 +128,16 @@ ul a{
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
 .landing-text{
     width: 100%;
+}
+.home{
+    display: block;
+}
+.profile-home-page{
+    margin-left: auto;
+    margin-right: auto;
+
 }
 }

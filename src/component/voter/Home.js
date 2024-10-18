@@ -9,7 +9,7 @@ const Home =() => {
     <div>
       
         <nav>
-        <img src={image} alt="logo" className="logo" />
+            <img src={image} alt="logo" className="logo" />
             <ul className="list-cont">
                 <Link to="#" onClick={() =>document.getElementById("vx-box").scrollIntoView({behavior: "smooth"})}>about</Link>
                 <li><Link to="/Signup">signup</Link></li>
@@ -24,16 +24,16 @@ const Home =() => {
         {/* <marquee behavior="scroll" direction="left" loop="infinite"  className="loop"> @VoteXpress your voice is your choice</marquee> */}
       
         <div className="home">
-        <div className="landing-text">
-        <span>Welcome to VoteXpress</span>
-            <p>  Your Voice, Your Choice!
-                At VoteXpress, we believe every vote counts. Whether it’s a decision within your community, organization, or for a global cause, this platform empowers you to make your voice heard. Cast your vote, view real-time results, and see how your input helps shape the future.
-                Get involved. Vote today and make an impact!
-            </p>
-        </div>
-        <div>
-            <img src={voting} alt="voting" className="vote" />
-        </div>
+            <div className="landing-text profile-home-page">
+                <span>Welcome to VoteXpress</span>
+                    <p>  Your Voice, Your Choice!
+                        At VoteXpress, we believe every vote counts. Whether it’s a decision within your community, organization, or for a global cause, this platform empowers you to make your voice heard. Cast your vote, view real-time results, and see how your input helps shape the future.
+                        Get involved. Vote today and make an impact!
+                    </p>
+            </div>
+            <div className="profile-home-page">
+                <img src={voting} alt="voting" className="vote" />
+            </div>
         </div>
         <div id="vx-box">
             <p className="vx-meaning">
