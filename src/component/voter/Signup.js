@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { FaRegEyeSlash } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 import "../style/Signup.css";
 
 
@@ -10,6 +12,7 @@ const Signup = () => {
     const [password, setPassword] = useState("");
     const [id, setId] = useState("");
 
+    
     const [error, setError] = useState({
         name: "",
         email: "",
@@ -125,7 +128,7 @@ const Signup = () => {
                                 className="toggle-password"
                                 onClick={togglePasswordVisibility}
                             >
-                                {showPassword ? "Hide" : "Show"}
+                                {showPassword ? <FaEye />: <FaRegEyeSlash />}
                                 
                             </button>
                     </div>

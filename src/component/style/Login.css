@@ -14,18 +14,32 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 3em;
 }
+.login-box input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 .login-box p{
     width: 300px; 
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
 }
+
+.error-input{
+    border: 2px solid red;
+}
+.error-input:focus{
+    outline-color: red;
+}
+
 .exit-button{
     font-size: x-large;
     color: midnightblue;
     background: none;
     border: none;
-    
 }
 .close-btn{
     text-align: right; 
