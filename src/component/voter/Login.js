@@ -52,11 +52,9 @@ const Login = () => {
             navigate("/instruction"); 
         }
     };
-
     const handleExit = () => {
         navigate("/");
     };
-
     return (
         <div className="login-box">
             <div className="close-btn">
@@ -90,7 +88,7 @@ const Login = () => {
                     />
                 </div>
                 <div>
-                    <label htmlFor="id">ID no: </label>
+                    <label htmlFor="id">ID No: </label>
                     <input
                         type="text"
                         name="id"
