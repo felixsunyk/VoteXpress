@@ -80,9 +80,11 @@ nav{
 }
 
 #vx-box{
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
     border-radius: 10px;
+    border: 3px solid midnightblue;
+    margin: 0 10px;
 }
 .vx-list{
     margin: 3em;
@@ -94,14 +96,16 @@ nav{
 }
 .vx-list-ul{
     list-style-type: none;
-    text-align: center;
+    /* text-align: center; */
     line-height: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
 }
 .vx-list-ul li span{
     font-weight: bold;
 }
 ul a{
-    color: whitesmoke;
+    color: rgb(245, 242, 242);
     text-decoration: none;
     text-transform: capitalize;
 }
@@ -110,8 +114,7 @@ ul a{
     font-weight: bold;
     text-transform: uppercase;
    text-align: center;
-   display: flex;
-   flex-wrap: wrap;
+
     
 }
 .vx-list{

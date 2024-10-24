@@ -28,10 +28,10 @@
     border-radius: 10px;
 }
 
-.error-input{
+.login-box input.error-input{
     border: 2px solid red;
 }
-.error-input:focus{
+.login-box input.error-input:focus{
     outline-color: red;
 }
 
