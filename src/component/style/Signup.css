@@ -20,6 +20,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+   
 }
 .signup-box input.error-input {
     border: 2px solid red;
