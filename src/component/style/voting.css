@@ -14,10 +14,11 @@
     justify-content: space-around;
    
 }
-.personal-card{
-    
+.vote{
    
- 
+    text-align: left;
+}
+.personal-card{
    margin-top: 3em;
 
    width: 50%; 
@@ -40,10 +41,7 @@
     padding: 0.3em;
 
 }
-.vote{
-   
-    text-align: left;
-}
+
 
 .personal-card h1{
     text-align: center;

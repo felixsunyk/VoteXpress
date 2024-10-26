@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import '../style/Countdown.css'
 
 
-const targetDate = new Date().getTime() + 1 * 6 * 15 * 15 * 10; 
+const targetDate = new Date().getTime() + 1 * 6 * 16 * 15 * 100; 
+
+
 const CountdownTimer = ({onEnd} ) => {
 
   const [timeLeft, setTimeLeft] = useState(targetDate - new Date().getTime());

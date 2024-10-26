@@ -5,11 +5,13 @@ import CountdownTimer from "./CountdownTime";
 
 
 const Instruction = () =>{
-    const [buttonText, setButtonText] = useState("Start voting")
+    const [buttonText, setButtonText] = useState("Start voting");
+    const [votingEnded, setVotingEnded] = useState(false);
 
 
     const handleCountdownEnd = () =>{
-        setButtonText("Voting Ended")
+        setButtonText("Voting Ended");
+        setVotingEnded(true);
     }
 
     const date = new Date();
@@ -30,7 +32,11 @@ const Instruction = () =>{
               
             </div> 
              <div>
-                 <Link to="/Voting" className="btn">{buttonText}</Link>
+             {!votingEnded && (
+                    <Link to="/Voting" className="btn">
+                        {buttonText}
+                    </Link>
+                )}
              </div>
             <footer><small>Your voice matters—let it be heard!</small></footer>
         </div>
