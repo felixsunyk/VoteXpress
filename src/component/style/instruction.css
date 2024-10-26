@@ -14,6 +14,10 @@ span{
 .button{
     background-color: whitesmoke;
 }
+/* .btn{
+    padding: 10px;
+    margin-bottom: 10px;
+} */
 .instruction-card{
     width: 50%; 
     margin: auto;
@@ -21,11 +25,19 @@ span{
     text-align: center;
     background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
     margin-top: 3em;
 }
-.instrct-btn{
-    color: whitesmoke;
-    background-color: midnightblue;
-    text-decoration: none;
+.instruction-card h3{
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+.intruction p{
+    line-height: 1.5em ;
+}
+
+footer small{
+   
+    font-weight: bold;
 }

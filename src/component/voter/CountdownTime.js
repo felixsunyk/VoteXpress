@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import '../style/Countdown.css'
 
 
-const targetDate = new Date().getTime() + 2 * 24 * 60 * 60 * 1000; 
-const CountdownTimer = () => {
+const targetDate = new Date().getTime() + 1 * 6 * 15 * 15 * 10; 
+const CountdownTimer = ({onEnd} ) => {
 
   const [timeLeft, setTimeLeft] = useState(targetDate - new Date().getTime());
 
@@ -11,6 +11,11 @@ const CountdownTimer = () => {
     const intervalId = setInterval(() => {
       const now = new Date().getTime();
       const timeRemaining = targetDate - now;
+
+      if (timeLeft <= 0){
+           onEnd();
+          return;
+      }
 
       if (timeRemaining <= 0) {
         clearInterval(intervalId);
@@ -21,7 +26,7 @@ const CountdownTimer = () => {
     }, 1000); 
 
     return () => clearInterval(intervalId); 
-  }, );
+  },[timeLeft, onEnd] );
 
   const formatTimeLeft = (milliseconds) => {
     const totalSeconds = Math.floor(milliseconds / 1000);
@@ -30,7 +35,7 @@ const CountdownTimer = () => {
     const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
     const seconds = totalSeconds % 60;
 
-    return `${days}d ${hours}h ${minutes}m ${seconds}s Left`;
+    return `${days}d ${hours}h ${minutes}m ${seconds}s`;
   };
 
   return (
