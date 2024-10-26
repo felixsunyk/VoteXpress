@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    /* margin: 0.5em; */
-    background-color: whitesmoke;
+    background-color: white;
 }
 nav{
     display: flex;
@@ -17,7 +16,6 @@ nav{
     top: 0;
     width: 100%;
     margin-bottom: 3em;
-    
 }
 .logo{
     width: 50px;

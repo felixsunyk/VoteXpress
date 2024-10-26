@@ -5,7 +5,7 @@
 }
 
 .login-box{
-    width: 50%; 
+    /* width: 50%;  */
     margin:  auto;
     padding: 20px;
     text-align: center;
@@ -84,3 +84,17 @@
     border: none;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 750px) {
+   .login-box .welcome{
+    padding: 20px;
+   }
+   .signup-page p{ 
+    display: inline-block;
+   }
+   .login-box{
+    display: block;
+    align-items: center;
+    padding: 0 20px;
+   }
+    }

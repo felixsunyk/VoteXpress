@@ -92,7 +92,7 @@ const Voting = () =>{
              
             ))}
 
-                {selectedCandidate ? <div className="vote-btn"><button className="btn" onClick={handleVote}>vote</button></div> : null}
+                {selectedCandidate ? <div className="vote-btn"><button className="btn" onClick={handleVote}>vote</button></div> : "select a candidate"}
            
         </div>
     );

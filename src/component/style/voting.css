@@ -15,10 +15,18 @@
    
 }
 .personal-card{
-    background-color: white;
-    width: 50%;
-   margin: 0 auto;
-   padding:  10px;
+    
+   
+ 
+   margin-top: 3em;
+
+   width: 50%; 
+   margin: auto;
+   padding: 10px;
+   text-align: center;
+   background-color: #f9f9f9;
+   border-radius: 10px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
    margin-top: 3em;
 }
 .name-text{
@@ -31,6 +39,10 @@
  
     padding: 0.3em;
 
+}
+.vote{
+   
+    text-align: left;
 }
 
 .personal-card h1{
