@@ -1,28 +1,22 @@
 import React from "react";
-import "../style/home.css";
-import image from "../img/img.png";
-import voting from "../img/voting.jpg"       
-import { Link } from "react-router-dom";
+import "../style/home.css"; 
+import Navigation from "./Navigation";
+import voting from '../img/pexels-sora-shimazaki-5926265-removebg-preview.png';
+import rescaf from '../img/rescaf-logo.jpg';
+import LHI from '../img/loyalty-house.jpg';
+import Everything from '../img/epc-church.jpg';
+
+
 
 const Home =() => {
     return(
     <div>
-      
-        <nav>
-            <img src={image} alt="logo" className="logo" />
-            <ul className="list-cont">
-                <Link to="#" onClick={() =>document.getElementById("vx-box").scrollIntoView({behavior: "smooth"})}>about</Link>
-                <li><Link to="/Signup">signup</Link></li>
-                <li><Link to="/Login">login</Link></li>
-                <li><Link to="/Result">view Result</Link></li>
-                
-            </ul>
-
-        </nav>
-      
-        
-        {/* <marquee behavior="scroll" direction="left" loop="infinite"  className="loop"> @VoteXpress your voice is your choice</marquee> */}
-      
+      <div className="navigation-div">
+       <Navigation />
+      </div>
+       <div>
+  
+       </div>
         <div className="home">
             <div className="landing-text profile-home-page">
                 <span>Welcome to VoteXpress</span>
@@ -57,10 +51,21 @@ const Home =() => {
                 </ul>
             </div>
         </div>
+        <section className="">
+            <h2 className="sponsor">sponsorship</h2>
+            <div>
+                <ul className="sponsorship-box"> 
+                    <p><img src={LHI}  alt="LHI-Image"/></p>
+                    <p><img src={rescaf} alt="rescaf" /></p>
+                    <p><img src={Everything} alt="Everything" /></p>
+
+                </ul>
+            </div>
+        </section>
 
       <section>
         <footer>
-
+       
         </footer>
       </section>
     </div>

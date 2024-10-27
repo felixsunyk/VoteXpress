@@ -6,22 +6,7 @@
 body{
     background-color: white;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding:  0 2em;
-    background-color: midnightblue;
-    color: whitesmoke;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin-bottom: 3em;
-}
-.logo{
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-}
+
 .list-cont{
     display: flex;
     justify-content: space-around;
@@ -39,6 +24,7 @@ nav{
     margin:0.5em;
     padding: 0 20px;
     width: 50%;
+    /* color: white; */
     text-align: center;
     align-content: center;
     height: 100%;
@@ -56,12 +42,11 @@ nav{
     height: 100%;
     
 }
+
 .home{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 4em 0;
-    /* align-items: center; */
+    flex-wrap: wrap; 
 }
 .profile-home-page{
     flex: 1 ;
@@ -69,7 +54,7 @@ nav{
     max-width: 500px;
     background-color: white;
     padding: 20px;
-    margin-top: 5em;
+   margin-top: 10em;
     border-radius: 8px;
     flex-basis: 45%;
     -webkit-box-shadow: 4px 7px 16px -2px rgba(0,0,0,0.75);
@@ -82,7 +67,7 @@ nav{
     color: black;
     border-radius: 10px;
     border: 3px solid midnightblue;
-    margin: 0 10px;
+    margin: 5em 1em;
 }
 .vx-list{
     margin: 3em;
@@ -111,20 +96,36 @@ ul a{
     padding-top: 2em;
     font-weight: bold;
     text-transform: uppercase;
-   text-align: center;
-
-    
+   text-align: center; 
 }
 .vx-list{
     padding: 2em;
     line-height: 2em;
 }
-.loop{
-    position: fixed;
-    top: 95%;
-    padding-bottom: 3em;
-    color: white;
-    background-color: midnightblue;
+.sponsorship-box{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+.sponsorship-box img{
+    height: 150px;
+    width: 100%;
+    padding: 0 10px;
+
+   
+}
+.sponsor{
+   
+    text-transform: capitalize;
+    font-family: roboto;
+    border-bottom: 3px solid black;
+    width: fit-content;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
 }
 
 

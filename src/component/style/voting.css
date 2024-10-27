@@ -9,26 +9,34 @@
     height: 50px;
     border-radius: 50px;
 }
+
 .personal-div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 10px;
    
 }
-.vote{
-   
+.personal-text{
+    padding: 10px;
+}
+/* .vote-box{
+   border: 2px solid black;
+   margin: 10px 0;
     text-align: left;
-}
+    padding: 1em 0;
+    border-radius: 10px;
+} */
 .personal-card{
-   margin-top: 3em;
-
-   width: 50%; 
-   margin: auto;
-   padding: 10px;
-   text-align: center;
-   background-color: #f9f9f9;
-   border-radius: 10px;
-   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-   margin-top: 3em;
+    width: 50%; 
+   margin-left: auto;
+   margin-right: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 13em;
+   
 }
 .name-text{
     margin-bottom: 1em;
