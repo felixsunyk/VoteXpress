@@ -4,6 +4,7 @@ import Felix from "../img/felix.jpg";
 import mene from "../img/mene k.jpg";
 import amarachi from "../img/godsafe.jpg";
 import { useNavigate } from "react-router-dom";
+import Navigation from "./Navigation";
 
 
 
@@ -64,36 +65,37 @@ const Voting = () =>{
 
     const handleVote = () => {
 
-        const selectedCandidateName = person.find((user) => 
-        user.id === selectedCandidate)?.name;
-        navigate("/Thanks", { state: { name: selectedCandidateName, position: "president" } });
+        navigate("/Thanks")
+
     };
 
 
     return(
-        <div className="personal-card">
-             <div className="close-btn">
-            <button onClick={handleExit} className="exit-button ">
-                   x
-                </button>
+        <div className="voting-container">
+                <Navigation />
+            <div className="personal-card">
+                 <div className="close-btn">
+                <button onClick={handleExit} className="exit-button ">
+                       x
+                    </button>
+                </div>
+                 <h1>president</h1>
+                 {person.map((user) =>(
+                <div className="vote"  key={user.id} >
+                    <Vote
+                        name={user.name}
+                        text={user.text}
+                        img={user.imgSrc}
+                        id={user.id}
+                        selected ={selectedCandidate}
+                        onChange={handleSelection}
+                    />
+                </div>
+            
+                ))}
+                    {selectedCandidate ? <div className="vote-btn"><button className="btn" onClick={handleVote}>vote</button></div> : "select a candidate"}
+            
             </div>
-             <h1>president</h1>
-             {person.map((user) =>( 
-            <div className="vote"  key={user.id} >
-                <Vote  
-                    name={user.name} 
-                    text={user.text}
-                    img={user.imgSrc} 
-                    id={user.id}
-                    selected ={selectedCandidate}
-                    onChange={handleSelection}
-                />
-            </div>
-             
-            ))}
-
-                {selectedCandidate ? <div className="vote-btn"><button className="btn" onClick={handleVote}>vote</button></div> : "select a candidate"}
-           
         </div>
     );
 }; 
