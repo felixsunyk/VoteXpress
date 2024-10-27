@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import '../style/Countdown.css'
 
 
-const targetDate = new Date().getTime() + 1 * 6 * 16 * 15 * 100; 
+const targetDate = new Date().getTime() + 1 * 30 * 30 * 30 * 100; 
 
 
-const CountdownTimer = ({onEnd} ) => {
+const CountdownTimer = ({onEnd = () => {}}) => {
 
   const [timeLeft, setTimeLeft] = useState(targetDate - new Date().getTime());
 
@@ -28,7 +28,7 @@ const CountdownTimer = ({onEnd} ) => {
     }, 1000); 
 
     return () => clearInterval(intervalId); 
-  },[timeLeft, onEnd] );
+  },[timeLeft, onEnd]);
 
   const formatTimeLeft = (milliseconds) => {
     const totalSeconds = Math.floor(milliseconds / 1000);
@@ -42,8 +42,10 @@ const CountdownTimer = ({onEnd} ) => {
 
   return (
     <div className="result-dev">
-      <h2>Countdown Timer</h2>
-      <p className="left">{timeLeft > 0 ? formatTimeLeft(timeLeft) : "Time's up!"}</p>
+      <p className="left">{timeLeft > 0 ? (
+        <p>Voting will end in : {formatTimeLeft(timeLeft)}. cast your vote now</p> ): 
+        <p>Voting has Ended! </p>}
+        </p>
     </div>
   );
 };

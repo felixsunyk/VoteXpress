@@ -4,18 +4,16 @@
     box-sizing: border-box;
 }
 .left{
-    border: 2px solid midnightblue;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    padding: 10px;
     font-size: large;
-    border-radius: 7px;
     margin-right: auto;
     font-weight: bold;
+    color: black;
+    width: 100%;
+    color: white;
+    padding: 0 5px;
+    border-radius: 10px 10px 0 0;
     cursor: pointer;
+    background-color: midnightblue;
 
 }
 .result-dev{
