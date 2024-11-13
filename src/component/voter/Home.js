@@ -51,7 +51,7 @@ const Home =() => {
                 </ul>
             </div>
         </div>
-        <section className="">
+        <section className="sponsorship">
             <h2 className="sponsor">sponsorship</h2>
             <div>
                 <ul className="sponsorship-box"> 

@@ -102,8 +102,18 @@ ul a{
     padding: 2em;
     line-height: 2em;
 }
+.sponsorship{
+    background-color: whitesmoke;
+    margin: 0 2em;
+    border-radius: 7px;
+    
+}
+.sponsorship h2{
+    padding-top: 1em;
+}
 .sponsorship-box{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     width: 100%;
     justify-content: space-around;
