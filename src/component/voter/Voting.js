@@ -2,7 +2,17 @@ import React, { useState } from "react";
 import "../style/voting.css";
 import Felix from "../img/felix.jpg";
 import mene from "../img/mene k.jpg";
+import charls from "../img/charle.jpg"
 import amarachi from "../img/godsafe.jpg";
+import APC from "../img/logos/apc.jpg";
+import APGA from "../img/logos/apga.png";
+import ADC from "../img/logos/adc.jpg";
+import PDP from "../img/logos/pdp.png";
+import APM from "../img/logos/apm.jpg";
+import LP from "../img/logos/lp.jpg";
+import NNPP from "../img/logos/nnpp.jpg";
+import SDP from "../img/logos/sdp.jpg";
+import YPP from "../img/logos/ypp.png";
 import { useNavigate } from "react-router-dom";
 import Navigation from "./Navigation";
 
@@ -13,39 +23,90 @@ const person = [
         name:"Felix",
         id: 1,
         imgSrc: Felix,
-        text: "sometext" 
+        party: "APC",
+        logo: APC 
+    },
+    {
+        name:"Charles",
+        id: 2,
+        imgSrc: charls,
+        party: "PDP", 
+        logo: PDP,
     },
     {
         name:"Godsafe",
-        id: 2,
+        id: 3,
+        party: "LP",
         imgSrc: amarachi,
-        text: "sometext"
+        logo: LP
     },
     {
         name:"Mene",
-        id: 3,
+        id: 4,
+        party:  "YPP",
         imgSrc: mene,
-        text:"some text"
-    }
+        logo : YPP
+    },
+    {
+        name:"Aabe ",
+        id: 5,
+        imgSrc: mene,
+        party : "APGA",
+        logo : APGA,
+    },
+    {
+        name:"Dornu",
+        id: 6,
+        imgSrc: mene,
+        party : "NNPP",
+        logo : NNPP,
+    },
+    {
+        name:"GoodLuck",
+        id: 7,
+        imgSrc: mene,
+        logo : ADC,
+        party :  "ADC",
+    },
+    {
+        name:"Gideon",
+        id: 8,
+        party : "SDP",
+        imgSrc: mene,
+        logo : SDP
+    },
+    {
+        name:"BRIGHT",
+        id: 9,
+        party : "APM",
+        imgSrc: mene,
+        logo :APM
+    },
 ]
 
 
-const Vote = ({name, text, img, id, selected, onChange}) =>{
+const Vote = ({name, img, id, party, selected, logo, onChange}) =>{
     return(
         <div className="vote">
                 <div className="personal-div">
-                    <div className="name-text">
-                        <input 
-                        type="radio" 
-                        name="candidate"
-                        value={id}
-                        checked={selected===id}
-                        onChange={() => onChange(id)}
-                        /> 
+                   <div className="personalIm-Box">
+                        <img src={img} alt="images" className="personalimg"/>
                         <span>{name}</span>
-                        <p>{text}</p>
                     </div>
-                   <img src={img} alt="images" className="img"/>
+                   <span className="party">{party}</span>
+                    <span> <img src={logo}  alt="logo" className="logo"/></span>
+                    <div className="name-text">
+                            <input
+                            type="radio"
+                            id={`candidate-${id}`}
+                            name="candidate"
+                            value={id}
+                            checked={selected===id}
+                            onChange={() => onChange(id)}
+                            />
+                        <label htmlFor={`candidate-${id}`}>
+                            </label>
+                    </div>
                </div>
         </div>
     )
@@ -79,14 +140,15 @@ const Voting = () =>{
                        x
                     </button>
                 </div>
-                 <h1>president</h1>
+                 <h2>presidential candidate</h2>
                  {person.map((user) =>(
                 <div className="vote"  key={user.id} >
                     <Vote
                         name={user.name}
-                        text={user.text}
+                        party={user.party}
                         img={user.imgSrc}
                         id={user.id}
+                        logo={user.logo}
                         selected ={selectedCandidate}
                         onChange={handleSelection}
                     />
