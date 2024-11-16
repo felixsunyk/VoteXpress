@@ -24,7 +24,6 @@ body{
     margin:0.5em;
     padding: 0 20px;
     width: 50%;
-    /* color: white; */
     text-align: center;
     align-content: center;
     height: 100%;
@@ -34,7 +33,6 @@ body{
    font-size: larger;
    font-weight: bold;
    color: midnightblue;
-   /* padding-bottom: 10px; */
    line-height: 6em;
 }
 .vote{
@@ -102,8 +100,19 @@ ul a{
     padding: 2em;
     line-height: 2em;
 }
+.sponsorship{
+    background-color: whitesmoke;
+    margin: 0 2em;
+    border-radius: 7px;
+    padding: 1em 0;
+    
+}
+.sponsorship h2{
+    padding-top: 1em;
+}
 .sponsorship-box{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     width: 100%;
     justify-content: space-around;
@@ -142,4 +151,10 @@ ul a{
     margin-right: auto;
 
 }
+.sponsorship-box img{
+     width: 80%;
+     height:70px ;
 }
+}
+
+
