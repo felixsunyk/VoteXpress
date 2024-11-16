@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import "../style/Signup.css";
+import { IoMdClose } from "react-icons/io";
 
 
 const Signup = () => {
@@ -77,7 +78,7 @@ const Signup = () => {
         <div className="signup-container">  1
             <div className="signup-box">
                 <div className="close-btn">
-                    <button onClick={handleExit} className="exit-button">x</button>
+                    <button onClick={handleExit} className="exit-button"><IoMdClose /></button>
                 </div>
                 <p className="welcome">Welcome to VoteXpress</p>
                 <form onSubmit={handleSubmit}>

@@ -1,74 +1,88 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-nav{
-   background-color: midnightblue;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.nav-container{
-    margin-bottom: 2em;
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.nav-bar{
-    display: flex;
-    justify-content: space-between;
-    padding:  0 2em;
-    color: whitesmoke;
-}
-.logo{
-    width: 50px;
-    height: 50px;
-    margin: 10px;
+nav {
+  background-color: midnightblue;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.list-cont{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;align-items: center;
+.nav-container {
+  margin-bottom: 2em;
+  width: 100%;
+}
 
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+  height: 60px;
+  margin-right: 2em;
 }
-.list-cont li{
-    margin: 0 10px;
-    text-transform: capitalize;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-type: none;
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
 }
-.scroll-container {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    overflow: hidden;
-    white-space: nowrap;
+
+.list-cont {
+  display: flex;
+  align-items: center;
+}
+
+.list-cont li {
+  text-transform: capitalize;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style-type: none;
+}
+
+.countdown {
+  display: flex;
+  margin-top: 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.list-cont.open {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .list-cont { 
+    display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      background-color: midnightblue;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      border-radius: 5px;
+      height: 30vh;
+      z-index: 1;
   }
-.countdown{
-   width: 100%;
-    animation: scroll-left 15s linear infinite;
+  
+  .list-cont.open {
+      display: flex; 
+  }
+  
+  .menu-icon {
+      display: block;
+      cursor: pointer;
+      font-size: xx-large;
   }
   .countdown{
-    display: flex;
-    margin-top: 2em;
-   
+    position: absolute;
+    top: 25px;
+    
+  }
 }
-  .countdown p{
-  
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
- 
-  
-
-
-
-
-  @keyframes scroll-left {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
