@@ -9,10 +9,10 @@ import { IoMenuOutline } from "react-icons/io5";
 
 
 const Navigation = () =>{ 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(true);
 
 const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
+    setIsMenuOpen(!isMenuOpen);
 };
 
     return(
@@ -42,7 +42,7 @@ const toggleMenu = () => {
                      </li>
                    </ul>
                         <IoMenuOutline className="menu-icon" onClick={toggleMenu} />
-                   </div>
+                </div>
               
                 <div className="scroll-container">
                     <div className="countdown">
