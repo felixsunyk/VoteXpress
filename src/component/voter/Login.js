@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../style/Login.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { IoMdClose } from "react-icons/io";
+
 
 const Login = () => {
     const [name, setName] = useState("");
@@ -59,7 +61,7 @@ const Login = () => {
         <div className="login-container">
             <div className="login-box">
                 <div className="close-btn">
-                    <button onClick={handleExit} className="exit-button">x</button>
+                    <button onClick={handleExit} className="exit-button"><IoMdClose /></button>
                 </div>
                 <p className="welcome">Welcome to VoteXpress</p>
                 <form onSubmit={handleSubmit}>

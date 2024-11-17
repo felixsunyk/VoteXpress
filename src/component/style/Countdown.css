@@ -14,10 +14,12 @@
     border-radius: 10px 10px 0 0;
     cursor: pointer;
     background-color: midnightblue;
-
+    
 }
 .result-dev{
+    margin-right: auto;
     text-align: center;
+    margin-left: auto;
 }
 .result-dev h2{
     margin: 10px 0;

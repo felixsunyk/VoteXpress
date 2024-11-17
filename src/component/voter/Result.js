@@ -19,9 +19,12 @@ console.log("isEmpty");
             <div>
                 <ul className="result-nav">
                     <li>Name</li>
+                    <li>logo</li>
                     <li>Position</li>
-                    <li>Number of vote</li>
+                    <li>No of vote</li>
+                    <li>vote %</li>
                 </ul>
+            
             </div>
             <div className={isEmpty ? "result-box no-border" : "result-box"}>
                 <p>{name}</p>
