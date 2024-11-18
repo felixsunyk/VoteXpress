@@ -43,7 +43,7 @@ const CountdownTimer = ({onEnd = () => {}}) => {
   return (
     <div className="result-dev">
       <p className="left">{timeLeft > 0 ? (
-        <p>Voting will end in : {formatTimeLeft(timeLeft)}. cast your vote now</p> ): 
+        <p className="pres">Voting will end in : {formatTimeLeft(timeLeft)}. cast your vote now</p> ): 
         <p>Voting has Ended! </p>}
         </p>
     </div>
