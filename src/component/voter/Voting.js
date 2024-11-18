@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-import "../style/voting.css";
+import  "../style/voting.css";
 import Felix from "../img/felix.jpg";
 import mene from "../img/mene k.jpg";
 import charls from "../img/charle.jpg"
 import amarachi from "../img/godsafe.jpg";
+import nabele from "../img/nabele.jpg";
+import my_G from "../img/my-G2.jpg";
+import lastborn from "../img/last-born.jpg"
+// import last _born from "../img/last-born.jpg";
 import APC from "../img/logos/apc.jpg";
 import APGA from "../img/logos/apga.png";
 import ADC from "../img/logos/adc.jpg";
@@ -50,7 +54,7 @@ const person = [
     {
         name:"Aabe ",
         id: 5,
-        imgSrc: mene,
+        imgSrc: nabele,
         party : "APGA",
         logo : APGA,
     },
@@ -64,7 +68,7 @@ const person = [
     {
         name:"GoodLuck",
         id: 7,
-        imgSrc: mene,
+        imgSrc: lastborn,
         logo : ADC,
         party :  "ADC",
     },
@@ -72,7 +76,7 @@ const person = [
         name:"Gideon",
         id: 8,
         party : "SDP",
-        imgSrc: mene,
+        imgSrc: my_G,
         logo : SDP
     },
     {
@@ -155,7 +159,7 @@ const Voting = () =>{
                 </div>
             
                 ))}
-                    {selectedCandidate ? <div className="vote-btn"><button className="btn" onClick={handleVote}>vote</button></div> : "select a candidate"}
+                    {selectedCandidate ? <div className="vote-btn"><button className="btn" onClick={handleVote}>vote</button></div> : "select a candidate" }
             
             </div>
         </div>
